@@ -108,20 +108,20 @@ const Home = () => {
         <input 
           type="text" 
           required 
-          value={title}
+          value={Title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <label>Blog body:</label>
         <textarea
           required
-          value={body}
+          value={Body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
         <label>Blog author:</label>
         <input 
           type="text" 
           required 
-          value={author}
+          value={Author}
           onChange={(e) => setAuthor(e.target.value)}
         />
         <button>Add Blog</button>
