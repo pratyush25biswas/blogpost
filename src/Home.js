@@ -37,7 +37,7 @@ const Home = () => {
     [
       {
         title: "first blog",
-        body: "Welcome to my blog",
+        body: "Welcome",
         author: "me",
         likes:10,
         dislikes:12,
@@ -45,7 +45,7 @@ const Home = () => {
       },
       {
         title: "second blog",
-        body: "hello , a nice blog",
+        body: "hello",
         author: "you",
         likes:2,
         dislikes:1,
