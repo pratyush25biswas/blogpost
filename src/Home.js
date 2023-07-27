@@ -3,9 +3,9 @@ import { useState } from "react";
 
 const Home = () => {
 
-  const [title, setTitle] = useState('');
-  const [body, setBody] = useState('');
-  const [author, setAuthor] = useState('');
+  const [Title, setTitle] = useState('');
+  const [Body, setBody] = useState('');
+  const [Author, setAuthor] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,13 +13,20 @@ const Home = () => {
     for(var k = 0 ; k < blogs.length ; k++){
       newblogs[k]=blogs[k];
     }
-    const likes=Math.floor(Math.random() * 11);
-    const dislikes=Math.floor(Math.random() * 11);
-    const id=k+1;
-    const blog = { title, body, author, likes, dislikes, id};
-    //console.log(blog);
     
-    newblogs[k]=blog;
+    const L= blogs.length;
+    const Likes=Math.floor(Math.random() * 11);
+    const Dislikes=Math.floor(Math.random() * 11);
+    const Id=L;
+
+    newblogs[L]={};
+    newblogs[L].id=Id;
+    newblogs[L].title=Title;
+    newblogs[L].author=Author;
+    newblogs[L].body=Body;
+    newblogs[L].likes=Likes;
+    newblogs[L].dislikes=Dislikes;
+    //console.log(newblogs);
     setBlogs(newblogs);
 
     
